@@ -5,6 +5,7 @@ import Qs from 'qs'
 import axios from 'axios'
 import 'antd/dist/antd.css';
 import './index.css';
+import AppGlobal from './AppGlobal';
 const { SubMenu } = Menu;
 const menu = (
     <Menu>
@@ -16,87 +17,117 @@ const menu = (
     </Menu>
 );
 const menu2 = (
-    <Menu>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=人大概况&lan_mu=人大概况&tittle=默认">
-                人大概况
+    <Menu style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=千层石&tittle=默认">
+                千层石
         </a>
         </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=人大概况&lan_mu=机构设置&tittle=默认">
-                机构设置
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=假山石料&tittle=默认">
+                假山石料
         </a>
         </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=龟纹石&tittle=默认">
+                龟纹石
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=龟纹石&tittle=默认">
+                龟纹石
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=草坪石&tittle=默认">
+                草坪石
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=刻字石&tittle=默认">
+                刻字石
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=景观石&tittle=默认">
+                景观石
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=泰山石&tittle=默认">
+                泰山石
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=太湖石&tittle=默认">
+                太湖石
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=石槽石磨&tittle=默认">
+                石槽石磨
+            </a>
+        </Menu.Item>
         <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=人大概况&lan_mu=制度建设&tittle=默认">
-                制度建设
-        </a>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=驳岸工程&tittle=默认">
+                驳岸工程
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=假山工程&tittle=默认">
+                假山工程
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a  style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=灵璧石&tittle=默认">
+                灵璧石
+            </a>
+        </Menu.Item>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=产品展示&lan_mu=鹅软石&tittle=默认">
+                鹅软石
+            </a>
         </Menu.Item>
     </Menu>
 );
 const menu3 = (
-    <Menu>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=新闻中心&lan_mu=人大要闻&tittle=默认">
-                人大要闻
+    <Menu style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} 
+            target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=工程案例&lan_mu=假山工程&tittle=默认">
+                假山工程
         </a>
         </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=新闻中心&lan_mu=通知公告&tittle=默认">
-                通知公告
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=新闻中心&lan_mu=工作动态&tittle=默认">
-                工作动态
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}
+            target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=工程案例&lan_mu=园林工程&tittle=默认">
+                园林工程
         </a>
         </Menu.Item>
     </Menu>
 );
 const menu4 = (
-    <Menu>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=依法履职&lan_mu=立法工作&tittle=默认">
-                立法工作
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=依法履职&lan_mu=决定决议&tittle=默认">
-                决定决议
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=依法履职&lan_mu=任职任免&tittle=默认">
-                任职任免
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=依法履职&lan_mu=监督工作&tittle=默认">
-                监督工作
+    <Menu style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} 
+            target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=关于我们&lan_mu=关于我们&tittle=默认">
+                关于我们
         </a>
         </Menu.Item>
     </Menu>
 );
 const menu5 = (
-    <Menu>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=代表工作&lan_mu=代表信息&tittle=默认">
-                代表信息
+    <Menu style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} 
+            target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=资讯动态&lan_mu=公司动态&tittle=默认">
+                公司动态
         </a>
         </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=代表工作&lan_mu=代表风采&tittle=默认">
-                代表风采
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=代表工作&lan_mu=代表信箱&tittle=默认">
-                代表信箱
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=代表工作&lan_mu=议案建议&tittle=默认">
-                议案建议
+        <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} 
+            target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=资讯动态&lan_mu=行业动态&tittle=默认">
+                行业动态
         </a>
         </Menu.Item>
     </Menu>
@@ -126,25 +157,11 @@ const menu6 = (
     </Menu>
 );
 const menu7 = (
-    <Menu>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/">
-                蓉城镇
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/">
-                庙前镇
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/">
-                杜村乡
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/">
-                新河镇
+    <Menu style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+       <Menu.Item style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>
+            <a style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} 
+            target="_blank" rel="noopener noreferrer" href="/mynews?ban_kuai=联系我们&lan_mu=联系我们&tittle=默认">
+                联系我们
         </a>
         </Menu.Item>
     </Menu>
@@ -171,57 +188,54 @@ export default class MyHeader extends React.Component {
         return (
             <div>
                 <Row>
+                    <Col span={4}>
+                        <Button 
+                        type="primary"
+                        style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}
+                        >
+                            <a target="_blank" rel="noopener noreferrer" href="/">
+                            首页
+                            </a>
+                        </Button>
+                    </Col>
+                    <Col span={4}>
+                        <Dropdown  overlay={menu2} placement="bottomCenter">
+                            <Button style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }} >产品中心</Button>
+                        </Dropdown>
+                    </Col>
+                    <Col span={4}>
+                        <Dropdown overlay={menu3} placement="bottomCenter"
+                         type="primary"
+                         >
+                            <Button style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>工程案例</Button>
+                        </Dropdown>
+                    </Col>
+                    <Col span={4}>
+                        <Dropdown overlay={menu4} placement="bottomCenter">
+                            <Button style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>关于我们</Button>
+                        </Dropdown>
+                    </Col>
+                    <Col span={4}>
+                        <Dropdown overlay={menu5} placement="bottomCenter">
+                            <Button style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>资讯动态</Button>
+                        </Dropdown>
+                    </Col>
+                    <Col span={4}>
+                        <Dropdown overlay={menu7} placement="bottomCenter">
+                            <Button style={{'border-color':'#1ca52c',color:'#FFFFFF','backgroundColor': '#1ca52c','width': '100%' }}>联系我们</Button>
+                        </Dropdown>
+                    </Col>
+                </Row>
+                <Row>
                     <Carousel autoplay >
-                        <img src="https://wx.wuminmin.top/wxyl/image?id=17" alt="" />
-                        <img src="https://wx.wuminmin.top/wxyl/image?id=18" />
-                        <img src="https://wx.wuminmin.top/wxyl/image?id=19" />
-                        <img src="https://wx.wuminmin.top/wxyl/image?id=20" />
-                        <img src="https://wx.wuminmin.top/wxyl/image?id=21" />
-                        <img src="https://wx.wuminmin.top/wxyl/image?id=22" />
-                        <img src="https://wx.wuminmin.top/wxyl/image?id=23" />
-                        <img src="https://wx.wuminmin.top/wxyl/image?id=24" />
+                        <img src={AppGlobal.url.首页滚动图片1} />
+                        <img src={AppGlobal.url.首页滚动图片2} />
+                        <img src={AppGlobal.url.首页滚动图片3} />
+                        <img src={AppGlobal.url.首页滚动图片4} />
+                        <img src={AppGlobal.url.首页滚动图片5} />
                     </Carousel>
                 </Row>
-                <br></br>
-                <Row>
-                    <Col span={3}>
-                    </Col>
-                    <Col span={3}>
-                        <Dropdown overlay={menu} placement="bottomCenter">
-                            <Button>首页</Button>
-                        </Dropdown>
-                    </Col>
-                    <Col span={3}>
-                        <Dropdown overlay={menu2} placement="bottomCenter">
-                            <Button>人大概况</Button>
-                        </Dropdown>
-                    </Col>
-                    <Col span={3}>
-                        <Dropdown overlay={menu3} placement="bottomCenter">
-                            <Button>新闻中心</Button>
-                        </Dropdown>
-                    </Col>
-                    <Col span={3}>
-                        <Dropdown overlay={menu4} placement="bottomCenter">
-                            <Button>依法履职</Button>
-                        </Dropdown>
-                    </Col>
-                    <Col span={3}>
-                        <Dropdown overlay={menu5} placement="bottomCenter">
-                            <Button>代表工作</Button>
-                        </Dropdown>
-                    </Col>
-                    <Col span={3}>
-                        <Dropdown overlay={menu6} placement="bottomCenter">
-                            <Button>府委两院</Button>
-                        </Dropdown>
-                    </Col>
-                    <Col span={3}>
-                        <Dropdown overlay={menu7} placement="bottomCenter">
-                            <Button>乡镇人大</Button>
-                        </Dropdown>
-                    </Col>
-                </Row>
+                
                 <br></br>
             </div>
         );
