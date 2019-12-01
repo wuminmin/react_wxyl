@@ -4,11 +4,18 @@ import BraftEditor from 'braft-editor'
 import axios from 'axios'
 import Qs from 'qs'
 import moment from 'moment'
-import { Layout, Menu, Breadcrumb, Icon, Row, Col, Dropdown, Button, Tag, PageHeader } from 'antd';
+import { Select, Row, Col ,Button} from 'antd';
+import AppGlobal from './AppGlobal'
 
 export default class BasicDemo extends React.Component {
 
   state = {
+    模块名称列表: [
+      '假山工程', '园林工程', '驳岸工程',
+      '千层石', '假山石料', '龟纹石', '草坪石', '刻字石', '景观石', '泰山石', '太湖石', '石槽石磨', '灵璧石', '鹅软石',
+      '行业资讯', '企业资讯',
+      '关于我们'
+    ],
     editorState: BraftEditor.createEditorState('<p>Hello <b>World!</b></p>'), // 设置编辑器初始内容
     outputHTML: '<p></p>',
     myHTML: '',
@@ -39,8 +46,8 @@ export default class BasicDemo extends React.Component {
     })
   }
 
-  handleChangeBanShiRiQi = (e) => {
-    this.setState({ type: e.target.value });
+  handleChangeBanShiRiQi = (value) => {
+    this.setState({ type: value });
   }
 
   handleChangeBanShiRiQi2 = (e) => {
@@ -51,13 +58,20 @@ export default class BasicDemo extends React.Component {
 
     const { editorState, outputHTML, myHTML } = this.state
 
+    const { Option } = Select;
+
     return (
       <div>
         <Row>
-          <Col span={2}></Col>
-          <Col span={20}>
+          <Col span={24}>
             <label>模块名称:</label>
-            <input type="txt" defaultValue="" onChange={this.handleChangeBanShiRiQi} />
+            <Select defaultValue="" style={{ width: 240 }} onChange={this.handleChangeBanShiRiQi}>
+              {this.state.模块名称列表.map((item) => {
+                return (
+                  <Option value={item}>{item}</Option>
+                )
+              })}
+            </Select>
             <label>新闻标题:</label>
             <input type="txt" defaultValue="" onChange={this.handleChangeBanShiRiQi2} />
             <div className="editor-wrapper">
@@ -91,7 +105,7 @@ export default class BasicDemo extends React.Component {
                     'Content-Type': 'application/x-www-form-urlencoded'
                   },
                   method: 'post',
-                  url: 'https://wx.wuminmin.top/qyrd/rd_updata',
+                  url: AppGlobal.url.rd_updata,
                   data: Qs.stringify(data)
                 }).then(function (response) {
                   console.log(response)
@@ -105,7 +119,6 @@ export default class BasicDemo extends React.Component {
               }
               }>上传文章</Button>
           </Col>
-          <Col span={2}></Col>
         </Row>
 
       </div>

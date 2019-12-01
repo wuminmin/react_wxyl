@@ -10,9 +10,9 @@ const routing = (
   <Router>
     <div>
       <Route exact path="/" component={App} />
-      <Route exact path="/wen_zhang" component={BasicDemo} />
+      <Route exact path="/wz" component={BasicDemo} />
       <Route exact path="/mynews" component={MyNews} />
-      <Route exact path="/myimg" component={MyImg} />
+      <Route exact path="/tp" component={MyImg} />
     </div>
   </Router>
 )

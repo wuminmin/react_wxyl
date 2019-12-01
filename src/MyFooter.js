@@ -15,37 +15,28 @@ export default class MyFooter extends React.Component {
     }
 
     render() {
+        const my_footer_style = { 'border-color': '#b9f7f5', color: '#000000', 'backgroundColor': '#b9f7f5' }
         return (
             <div>
                 <br></br>
-                <Row>
+                <Row
+                    style={my_footer_style}
+                >
 
                     <Col span={2}>
 
                     </Col>
-                    <Col span={20}>
-                        友情链接：
-                    <Tag color="red" href={'http://www.chzrd.gov.cn/'}>池州市人大</Tag>
-                        <Tag color="red" href={'http://www.ahrd.gov.cn/ahrdweb/'} >安徽省人大</Tag>
+                    <Col span={20}
+                        style={my_footer_style}
+                    >
+                        <p align={'center'}>池州市万象园林绿化工程有限公司</p>
+                        <p align={'center'}>地址：安徽省池州市贵池区梅街镇</p>
+                        <p align={'center'}>联系电话：18956688966，15395364652</p>
                     </Col>
                     <Col span={2}>
 
                     </Col>
                 </Row>
-                <Row>
-                <Col span={8}>
-
-</Col>
-                    <Col span={8} aling={'center'}>
-                        池州市青阳县人大委员会
-                        <img align={'center'} src={'http://www.ahrd.gov.cn/ahrdweb/images/jg.png'}></img>
-
-                    </Col>
-                    <Col span={8}>
-
-</Col>
-                </Row>
-
             </div>
         );
     }

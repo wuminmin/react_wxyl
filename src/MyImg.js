@@ -11,8 +11,13 @@ const { SubMenu } = Menu;
 
 export default class MyImg extends React.Component {
     state = {
-        图片名称列表:[
-            '首页滚动图片1','首页滚动图片2','首页滚动图片3','首页滚动图片4','首页滚动图片5'
+        图片名称列表: [
+            '首页滚动图片1', '首页滚动图片2', '首页滚动图片3', '首页滚动图片4', '首页滚动图片5',
+            '工程案例1', '工程案例2', '工程案例3', '工程案例4', '工程案例5',
+            '产品中心滚动图片1', '产品中心滚动图片2', '产品中心滚动图片3', '产品中心滚动图片4', '产品中心滚动图片5',
+            '产品中心滚动图片6', '产品中心滚动图片7', '产品中心滚动图片8', '产品中心滚动图片9', '产品中心滚动图片10',
+            '产品中心滚动图片11', '产品中心滚动图片12', '产品中心滚动图片13', '产品中心滚动图片14', '产品中心滚动图片15',
+
         ],
         活动详单: [],
         菜单列表: [],
@@ -73,7 +78,7 @@ export default class MyImg extends React.Component {
                 });
 
             let data2 = {
-                "type":self.state.type
+                "type": self.state.type
             }
             axios({
                 headers: {
@@ -101,15 +106,15 @@ export default class MyImg extends React.Component {
     handleChange = (value) => {
         console.log(`selected ${value}`);
         this.setState({
-            tittle:value
+            tittle: value
         })
-      }
+    }
 
     render() {
         const props = {
             name: 'file',
             action: AppGlobal.url.uploadimg,
-            data:{usertoken:this.state.usertoken,tittle:this.state.tittle},
+            data: { usertoken: this.state.usertoken, tittle: this.state.tittle },
             headers: {
                 authorization: 'authorization-text',
             },
@@ -126,22 +131,19 @@ export default class MyImg extends React.Component {
         };
 
         const { Option } = Select;
-        
+
         return (
             <div>
-                <MyHeader usertoken={new URLSearchParams(this.props.location.search).get('usertoken')}></MyHeader>
                 <Row>
-                    <Col span={4}>
-                    </Col>
-                    <Col span={2}></Col>
-                    <Col span={18}>
-                    <Select defaultValue="" style={{ width: 120 }} onChange={this.handleChange}>
-                        {this.state.图片名称列表.map( (item) => {
-                            return(
-                            <Option value={item}>{item}</Option>
-                            )
-                        })}
-                    </Select>
+                    <Col span={24}>
+                        <label>选择类型:</label>
+                        <Select defaultValue="" style={{ width: 240 }} onChange={this.handleChange}>
+                            {this.state.图片名称列表.map((item) => {
+                                return (
+                                    <Option value={item}>{item}</Option>
+                                )
+                            })}
+                        </Select>
                         <label>上传图片:</label>
                         <Upload {...props}>
                             <Button>
