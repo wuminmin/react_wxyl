@@ -1,11 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import { Route, HashRouter } from 'react-router-dom'
-import App from './App'
-import BasicDemo from './BraftEditor'
-import MyNews from './MyNews'
-import MyImg from './MyImg'
+import "@babel/polyfill";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import { Route, HashRouter } from 'react-router-dom';
+import App from './App';
+import BasicDemo from './BraftEditor';
+import MyNews from './MyNews';
+import MyImg from './MyImg';
 const routing = (
   <HashRouter>
     <div>

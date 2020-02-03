@@ -32,6 +32,7 @@ export default class MyFooter extends React.Component {
                         <p align={'center'}>池州市万象园林绿化工程有限公司</p>
                         <p align={'center'}>地址：安徽省池州市贵池区梅街镇</p>
                         <p align={'center'}>联系电话：18956688966，15395364652</p>
+                        <p align={'center'}>皖ICP备 20001351号</p>
                     </Col>
                     <Col span={2}>
 
