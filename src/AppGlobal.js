@@ -1,6 +1,6 @@
 class AppGlobal {
     url = {
-        index:'http://wxyl.wuminmin.top',
+        index:'/',
         uploadimg:'https://wx.wuminmin.top/wxyl/upload_img',
         rd_xia_zai_tabs_by_ban_kuai:'https://wx.wuminmin.top/wxyl/rd_xia_zai_tabs_by_ban_kuai',
         rd_updata:'https://wx.wuminmin.top/wxyl/rd_updata',
