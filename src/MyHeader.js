@@ -195,21 +195,24 @@ export default class MyHeader extends React.Component {
                             style={{ 'border-color': '#b9f7f5', color: '#000000', 'backgroundColor': '#b9f7f5' }}
                         >基地直销  |  石材丰富  |  送货上门  |  量大从优</h2>
                     </Col>
-                    <Col span={8}>
+                    <Col span={6}>
                         <h2>安徽省池州市贵池区梅街镇</h2>
                     </Col>
-                    <Col span={4}
+                    <Col span={3}>
+                        <h4>邹经理：</h4>
+                    </Col>
+                    <Col span={3}
                         style={{ 'border-color': '#b9f7f5','align':'right', color: '#000000', 'backgroundColor': '#b9f7f5' }}
                     >
-                        <h2
+                        <h4
                             style={{ 'border-color': '#b9f7f5','align':'right', color: '#000000', 'backgroundColor': '#b9f7f5' }}
-                        >18956688966</h2>
-                        <h2
+                        >18956688966</h4>
+                        <h4
                             style={{ 'border-color': '#b9f7f5','align':'right', color: '#000000', 'backgroundColor': '#b9f7f5' }}
-                        >15395364652</h2>
+                        >      15395364652</h4>
                         <p
                             style={{ 'border-color': '#b9f7f5','align':'right', color: '#000000', 'backgroundColor': '#b9f7f5' }}
-                        >全国服务支撑热线</p>
+                        >全国服务支持热线</p>
                     </Col >
                 </Row>
                 <Row style={{ 'border-color': '#1ca52c', color: '#000000', 'backgroundColor': '#1ca52c' }}>
