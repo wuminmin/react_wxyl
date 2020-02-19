@@ -90,6 +90,12 @@ const menu3 = (
                 园林工程
         </a>
         </Menu.Item>
+        <Menu.Item style={{ 'border-color': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
+            <a style={{ 'border-color': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}
+                target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=工程案例&lan_mu=驳岸工程&tittle=默认">
+                驳岸工程
+        </a>
+        </Menu.Item>
     </Menu>
 );
 const menu4 = (
@@ -247,12 +253,12 @@ export default class MyHeader extends React.Component {
                 </Row>
                 <Row>
                     <Carousel autoplay >
-                        <img src={img_header1} />
-                        {/* <img src={AppGlobal.url.首页滚动图片1} />
+                        {/* <img src={img_header1} /> */}
+                        <img src={AppGlobal.url.首页滚动图片1} />
                         <img src={AppGlobal.url.首页滚动图片2} />
                         <img src={AppGlobal.url.首页滚动图片3} />
                         <img src={AppGlobal.url.首页滚动图片4} />
-                        <img src={AppGlobal.url.首页滚动图片5} /> */}
+                        <img src={AppGlobal.url.首页滚动图片5} />
                     </Carousel>
                 </Row>
                 <br></br>
