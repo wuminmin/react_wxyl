@@ -19,6 +19,11 @@ export default class MyImg extends React.Component {
             '产品中心滚动图片11', '产品中心滚动图片12', '产品中心滚动图片13', '产品中心滚动图片14', '产品中心滚动图片15',
 
         ],
+        模块列表:[
+            '千层石', '假山石料', '龟纹石', '草坪石', '刻字石', '景观石', '泰山石', '太湖石', '石槽石磨', '灵璧石', '鹅软石',
+        ],
+        当前模块:'',
+        当前图片名称:'',
         活动详单: [],
         菜单列表: [],
         lan_mu: new URLSearchParams(this.props.location.search).get('lan_mu'),
@@ -103,18 +108,30 @@ export default class MyImg extends React.Component {
         }
     }
 
-    handleChange = (value) => {
-        console.log(`selected ${value}`);
-        this.setState({
-            tittle: value
-        })
-    }
-
     render() {
         const props = {
             name: 'file',
             action: AppGlobal.url.uploadimg,
             data: { usertoken: this.state.usertoken, tittle: this.state.tittle },
+            headers: {
+                authorization: 'authorization-text',
+            },
+            onChange(info) {
+                if (info.file.status !== 'uploading') {
+                    console.log(info.file, info.fileList);
+                }
+                if (info.file.status === 'done') {
+                    message.success(`${info.file.name} ${info.file.response.code}`);
+                } else if (info.file.status === 'error') {
+                    message.error(`${info.file.name} ${info.file.response.code} `);
+                }
+            },
+        };
+
+        const props2 = {
+            name: 'file',
+            action: AppGlobal.url.uploadimg2,
+            data: { usertoken: this.state.usertoken, 当前模块: this.state.当前模块,当前图片名称:this.state.当前图片名称 },
             headers: {
                 authorization: 'authorization-text',
             },
@@ -137,13 +154,18 @@ export default class MyImg extends React.Component {
                 <Row>
                     <Col span={24}>
                         <label>选择类型:</label>
-                        <Select defaultValue="" style={{ width: 240 }} onChange={this.handleChange}>
+                        <Select defaultValue="" style={{ width: 240 }} onChange={(value) => {
+                             this.setState({
+                                tittle: value
+                            })
+                        }}>
                             {this.state.图片名称列表.map((item) => {
                                 return (
-                                    <Option value={item}>{item}</Option>
+                                    <Option key={item} value={item}>{item}</Option>
                                 )
                             })}
                         </Select>
+                       
                         <label>上传图片:</label>
                         <Upload {...props}>
                             <Button>
@@ -153,6 +175,58 @@ export default class MyImg extends React.Component {
                     </Col>
                 </Row>
 
+                <Row>
+                    <Col span={24}>
+                        <label>选择模块:</label>
+                        <Select defaultValue="" style={{ width: 240 }} onChange={(value) => {
+                             this.setState({
+                                当前模块: value
+                            })
+                        }}>
+                            {this.state.模块列表.map((item) => {
+                                return (
+                                    <Option key={item} value={item}>{item}</Option>
+                                )
+                            })}
+                        </Select>
+                        <label>图片名称:</label>
+                        <input type="txt" defaultValue="" onChange={(e) => {
+                            console.log(e.target.value);
+                            this.setState({当前图片名称:e.target.value});
+                        }} />
+                        <label>上传图片:</label>
+                        <Upload {...props2}>
+                            <Button>
+                                <Icon type="upload" /> 点击上传文件
+                            </Button>
+                        </Upload>
+                        <Button 
+                            onClick={(e)=>{
+                                let self = this;
+                                let data = {
+                                    "usertoken": self.state.usertoken,
+                                    "lan_mu":self.state.当前模块,
+                                    "tittle":self.state.当前图片名称
+                                }
+                                axios({
+                                    headers: {
+                                        'Content-Type': 'application/x-www-form-urlencoded'
+                                    },
+                                    method: 'post',
+                                    url:'https://wx.wuminmin.top/wxyl/delete_img',
+                                    data: Qs.stringify(data)
+                                }).then(function (response) {
+                                    console.log(response);
+                                    message.success(response.data);
+                                })
+                                    .catch(function (error) {
+                                        console.log(error);
+                                    });
+
+                            }}
+                        >删除图片</Button>
+                    </Col>
+                </Row>
             </div>
         )
     }

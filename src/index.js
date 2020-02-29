@@ -7,6 +7,7 @@ import App from './App';
 import BasicDemo from './BraftEditor';
 import MyNews from './MyNews';
 import MyImg from './MyImg';
+import MyImgGrid from './MyImgGrid';
 const routing = (
   <HashRouter>
     <div>
@@ -14,6 +15,7 @@ const routing = (
       <Route exact path="/wz" component={BasicDemo} />
       <Route exact path="/mynews" component={MyNews} />
       <Route exact path="/tp" component={MyImg} />
+      <Route exact path="/myimggrid" component={MyImgGrid} />
     </div>
   </HashRouter>
 )

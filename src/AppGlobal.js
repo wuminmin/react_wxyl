@@ -2,6 +2,7 @@ class AppGlobal {
     url = {
         index:'/',
         uploadimg:'https://wx.wuminmin.top/wxyl/upload_img',
+        uploadimg2:'https://wx.wuminmin.top/wxyl/upload_img2',
         rd_xia_zai_tabs_by_ban_kuai:'https://wx.wuminmin.top/wxyl/rd_xia_zai_tabs_by_ban_kuai',
         rd_updata:'https://wx.wuminmin.top/wxyl/rd_updata',
         rd_xia_zai:'https://wx.wuminmin.top/wxyl/rd_xia_zai',

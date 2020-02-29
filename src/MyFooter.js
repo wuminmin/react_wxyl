@@ -15,7 +15,7 @@ export default class MyFooter extends React.Component {
     }
 
     render() {
-        const my_footer_style = { 'border-color': '#b9f7f5', color: '#000000', 'backgroundColor': '#b9f7f5' }
+        const my_footer_style = { 'borderColor': '#b9f7f5', color: '#000000', 'backgroundColor': '#b9f7f5' }
         return (
             <div>
                 <br></br>
