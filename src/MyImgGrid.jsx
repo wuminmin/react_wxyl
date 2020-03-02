@@ -71,17 +71,18 @@ class MyMenu extends React.Component {
 
     render() {
         return (
-            <Row>
+            <div>
+                <Row>
                 <Col span={4}>
                     <Card title={this.props.ban_kuai}
-                        headStyle={{ textAlign: 'center', fontSize: '30px',width: '100%', height: 'auto', color: '#ffffff', background: '#1ca52c' }}
+                        headStyle={{ textAlign: 'center', fontSize: '30px', width: '100%', height: 'auto', color: '#ffffff', background: '#1ca52c' }}
                         bodyStyle={{ width: '100%', height: 'auto', background: '#b9f7f5' }}
                     >
                         {this.state.菜单列表.map((myitem) => {
                             return (
                                 <Button
-                                    key = {myitem}
-                                    value = {myitem}
+                                    key={myitem}
+                                    value={myitem}
                                     type='normal'
                                     style={{
                                         color: '#000000',
@@ -123,32 +124,38 @@ class MyMenu extends React.Component {
                     </Card>
                 </Col>
                 <Col span={20}>
-                    {this.state.图片列表.map( (i) => {
-                        return(
+                    {this.state.图片列表.map((i) => {
+                        return (
                             <Row>
-                                {i.map( (j) => {
-                                    return(
+                                {i.map((j) => {
+                                    return (
                                         <Col span={6}>
-                                        <img 
-                                            src={j.图片地址}
-                                            style={{
-                                                width:'100%',
-                                                height:'auto'
-                                            }}
-                                        ></img>
-                                        <span
-                                            style={{
-                                                textAlign:'center'
-                                            }}
-                                        >{j.图片名称}</span>
+                                            <div
+                                                style={{padding:'10px 10px 10px 10px'}}
+                                            >
+                                                <img
+                                                    src={j.图片地址}
+                                                    style={{
+                                                        width: '100%',
+                                                        height: 'auto'
+                                                    }}
+                                                ></img>
+                                                <h4
+                                                    style={{
+                                                        textAlign: 'center'
+                                                    }}
+                                                >{j.图片名称}</h4>
+                                            </div>
+
                                         </Col>
                                     )
                                 })}
-                        </Row>
+                            </Row>
                         )
                     })}
                 </Col>
             </Row>
+            </div>
         )
     }
 }
@@ -187,6 +194,8 @@ export default class MyImgGrid extends React.Component {
         return (
             <div>
                 <MyHeader></MyHeader>
+                <br></br>
+
                 {/* <Row>
                     <Col span={2}></Col>
                     <Col span={20}>

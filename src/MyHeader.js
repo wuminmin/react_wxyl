@@ -7,30 +7,20 @@ import 'antd/dist/antd.css';
 import './index.css';
 import AppGlobal from './AppGlobal';
 import img_header1 from './img_header1.png';
-const { SubMenu } = Menu;
-const menu = (
-    <Menu>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="/">
-                首页
-        </a>
-        </Menu.Item>
-    </Menu>
-);
 const menu2 = (
-    <Menu style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-        <Menu.Item style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=千层石&tittle=默认">
+    <Menu style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
+        <Menu.Item style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
+            <a style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=千层石&tittle=默认">
                 千层石
         </a>
         </Menu.Item>
-        <Menu.Item style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=假山石料&tittle=默认">
+        <Menu.Item style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
+            <a style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=假山石料&tittle=默认">
                 假山石料
         </a>
         </Menu.Item>
-        <Menu.Item style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=龟纹石&tittle=默认">
+        <Menu.Item style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
+            <a style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=龟纹石&tittle=默认">
                 龟纹石
             </a>
         </Menu.Item>
@@ -125,30 +115,6 @@ const menu5 = (
         </Menu.Item>
     </Menu>
 );
-const menu6 = (
-    <Menu>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.ahqy.gov.cn/">
-                人民政府
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.jjw.gov.cn/">
-                监察委员会
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://czqyfy.chinacourt.gov.cn/index.shtml">
-                人民法院
-        </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.ahqingyang.jcy.gov.cn/">
-                人民检察院
-        </a>
-        </Menu.Item>
-    </Menu>
-);
 const menu7 = (
     <Menu style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
@@ -178,9 +144,9 @@ export default class MyHeader extends React.Component {
     };
 
     render() {
-        const my_header_style = { 'borderColor': '#b9f7f5', color: '#000000', 'backgroundColor': '#b9f7f5' }
+        const my_header_style = { color: '#000000', backgroundColor: '#b9f7f5' }
         return (
-            <div>
+            <div style={{ backgroundColor: '#1ca52c' }} > 
                 <Row style={my_header_style}>
                     <Col span={2}
                         style={my_header_style}
@@ -216,47 +182,48 @@ export default class MyHeader extends React.Component {
                         >全国服务支持热线</p>
                     </Col >
                 </Row>
-                <Row style={{ 'borderColor': '#1ca52c', color: '#000000', 'backgroundColor': '#1ca52c' }}>
-                    <Col span={4}>
+                <Row style={{ backgroundColor: '#1ca52c' }} >
+                    <Col span={4} style={{ backgroundColor: '#1ca52c' }}>
                         <Button
                             type="primary"
-                            style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}
+                            style={{  color: '#FFFFFF', backgroundColor: '#1ca52c', 'width': '100%' }}
                         >
                             <a target="_blank" rel="noopener noreferrer" href="/">
                                 首页
                             </a>
                         </Button>
                     </Col>
-                    <Col span={4}>
-                        <Dropdown overlay={menu2} placement="bottomCenter">
-                            <Button style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} >产品中心</Button>
+                    <Col span={4} style={{ backgroundColor: '#1ca52c' }}>
+                        <Dropdown overlay={menu2} placement="bottomCenter"
+                        style={{ backgroundColor: '#1ca52c' }}
+                        >
+                            <Button style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} >产品中心</Button>
                         </Dropdown>
                     </Col>
-                    <Col span={4}>
+                    <Col span={4} style={{ backgroundColor: '#1ca52c' }}>
                         <Dropdown overlay={menu3} placement="bottomCenter"
+                        style={{ backgroundColor: '#1ca52c' }}
                             type="primary"
                         >
-                            <Button style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>工程案例</Button>
+                            <Button style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>工程案例</Button>
                         </Dropdown>
                     </Col>
-                    <Col span={4}>
+                    <Col span={4} style={{ backgroundColor: '#1ca52c' }}>
                         <Dropdown overlay={menu4} placement="bottomCenter">
-                            <Button style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>关于我们</Button>
+                            <Button style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>关于我们</Button>
                         </Dropdown>
                     </Col>
-                    <Col span={4}>
+                    <Col span={4} style={{ backgroundColor: '#1ca52c' }}>
                         <Dropdown overlay={menu5} placement="bottomCenter">
-                            <Button style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>资讯动态</Button>
+                            <Button style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>资讯动态</Button>
                         </Dropdown>
                     </Col>
-                    <Col span={4}>
+                    <Col span={4} style={{ backgroundColor: '#1ca52c' }}>
                         <Dropdown overlay={menu7} placement="bottomCenter">
-                            <Button style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>联系我们</Button>
+                            <Button style={{  color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>联系我们</Button>
                         </Dropdown>
                     </Col>
                 </Row>
-               
-                <br></br>
             </div>
         );
     }
