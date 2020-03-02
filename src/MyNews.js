@@ -1,12 +1,12 @@
 import { Layout, Menu, Breadcrumb, Icon, Row, Col, Dropdown, Button, Tag, PageHeader } from 'antd';
 // import Carousel from 'nuka-carousel';
-import React from 'react'
-import Qs from 'qs'
-import axios from 'axios'
+import React from 'react';
+import Qs from 'qs';
+import axios from 'axios';
 import 'antd/dist/antd.css';
 import './index.css';
-import MyHeader from './MyHeader'
-import MyFooter from './MyFooter'
+import MyHeader from './MyHeader';
+import MyFooter from './MyFooter';
 import AppGlobal from './AppGlobal';
 const { SubMenu } = Menu;
 

@@ -283,6 +283,16 @@ export default class App extends React.Component {
       <div>
         <MyHeader></MyHeader>
         <Row>
+                    <Carousel autoplay >
+                        {/* <img src={img_header1} /> */}
+                        <img src={AppGlobal.url.首页滚动图片1} />
+                        <img src={AppGlobal.url.首页滚动图片2} />
+                        <img src={AppGlobal.url.首页滚动图片3} />
+                        <img src={AppGlobal.url.首页滚动图片4} />
+                        <img src={AppGlobal.url.首页滚动图片5} />
+                    </Carousel>
+                </Row>
+        <Row>
           <Col span={2}></Col>
           <Col span={9}>
             <Tag color="#1ca52c">工程案例图片</Tag>
@@ -296,7 +306,7 @@ export default class App extends React.Component {
           </Col>
           <Col span={2}></Col>
           <Col span={9}>
-            <MyTabs ban_kuai={this.state.ban_kuai1}></MyTabs>
+            <MyImgTabs ban_kuai={this.state.ban_kuai1}></MyImgTabs>
           </Col>
           <Col span={2}></Col>
 

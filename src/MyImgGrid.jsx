@@ -1,20 +1,18 @@
 import { Card, Menu, Row, Col, Button } from 'antd';
 // import Carousel from 'nuka-carousel';
-import React from 'react'
-import Qs from 'qs'
-import axios from 'axios'
+import React from 'react';
+import Qs from 'qs';
+import axios from 'axios';
 import 'antd/dist/antd.css';
 import './index.css';
-import MyHeader from './MyHeader'
-import MyFooter from './MyFooter'
+import MyHeader from './MyHeader';
+import MyFooter from './MyFooter';
 
 class MyMenu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            菜单列表: [
-               
-            ],
+            菜单列表: [],
             图片列表: [],
             lan_mu: this.props.lan_mu,
             ban_kuai: this.props.ban_kuai,
@@ -76,8 +74,8 @@ class MyMenu extends React.Component {
             <Row>
                 <Col span={4}>
                     <Card title={this.props.ban_kuai}
-                        headStyle={{ textAlign: 'center', fontSize: '30px',width: '100%', height: 'auto', color: '#000000', background: '#ffffff' }}
-                        bodyStyle={{ width: '100%', height: 'auto', background: '#ffffff' }}
+                        headStyle={{ textAlign: 'center', fontSize: '30px',width: '100%', height: 'auto', color: '#ffffff', background: '#1ca52c' }}
+                        bodyStyle={{ width: '100%', height: 'auto', background: '#b9f7f5' }}
                     >
                         {this.state.菜单列表.map((myitem) => {
                             return (
@@ -124,8 +122,7 @@ class MyMenu extends React.Component {
                         })}
                     </Card>
                 </Col>
-                <Col span={2}></Col>
-                <Col span={18}>
+                <Col span={20}>
                     {this.state.图片列表.map( (i) => {
                         return(
                             <Row>

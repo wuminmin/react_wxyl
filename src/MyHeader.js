@@ -20,57 +20,58 @@ const menu = (
 const menu2 = (
     <Menu style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
         <Menu.Item style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=千层石&tittle=默认">
+            <a style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=千层石&tittle=默认">
                 千层石
         </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=假山石料&tittle=默认">
+            <a style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=假山石料&tittle=默认">
                 假山石料
         </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=龟纹石&tittle=默认">
+            <a style={{ 'borderColor': '#FFFFFF', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=龟纹石&tittle=默认">
                 龟纹石
             </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=草坪石&tittle=默认">
+            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=草坪石&tittle=默认">
                 草坪石
             </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=刻字石&tittle=默认">
+            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=刻字石&tittle=默认">
                 刻字石
             </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=景观石&tittle=默认">
+            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=景观石&tittle=默认">
                 景观石
             </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=泰山石&tittle=默认">
+            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=泰山石&tittle=默认">
                 泰山石
             </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=太湖石&tittle=默认">
+            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=太湖石&tittle=默认">
                 太湖石
             </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=石槽石磨&tittle=默认">
+            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=石槽石磨&tittle=默认">
                 石槽石磨
             </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=灵璧石&tittle=默认">
+            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=灵璧石&tittle=默认">
                 灵璧石
             </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
-            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=产品展示&lan_mu=鹅软石&tittle=默认">
+            <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }} 
+            target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=产品中心&lan_mu=鹅软石&tittle=默认">
                 鹅软石
             </a>
         </Menu.Item>
@@ -80,19 +81,19 @@ const menu3 = (
     <Menu style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
             <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}
-                target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=工程案例&lan_mu=假山工程&tittle=默认">
+                target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=工程案例&lan_mu=假山工程&tittle=默认">
                 假山工程
         </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
             <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}
-                target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=工程案例&lan_mu=园林工程&tittle=默认">
+                target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=工程案例&lan_mu=园林工程&tittle=默认">
                 园林工程
         </a>
         </Menu.Item>
         <Menu.Item style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}>
             <a style={{ 'borderColor': '#1ca52c', color: '#FFFFFF', 'backgroundColor': '#1ca52c', 'width': '100%' }}
-                target="_blank" rel="noopener noreferrer" href="/#/mynews?ban_kuai=工程案例&lan_mu=驳岸工程&tittle=默认">
+                target="_blank" rel="noopener noreferrer" href="/#/myimggrid?ban_kuai=工程案例&lan_mu=驳岸工程&tittle=默认">
                 驳岸工程
         </a>
         </Menu.Item>
@@ -199,7 +200,7 @@ export default class MyHeader extends React.Component {
                         <h2>安徽省池州市贵池区梅街镇</h2>
                     </Col>
                     <Col span={3}>
-                        <h4>邹经理：</h4>
+                        <h4 style={{textAlign:'right'}}>邹经理：</h4>
                     </Col>
                     <Col span={3}
                         style={{ 'borderColor': '#b9f7f5','align':'right', color: '#000000', 'backgroundColor': '#b9f7f5' }}
@@ -254,16 +255,7 @@ export default class MyHeader extends React.Component {
                         </Dropdown>
                     </Col>
                 </Row>
-                <Row>
-                    <Carousel autoplay >
-                        {/* <img src={img_header1} /> */}
-                        <img src={AppGlobal.url.首页滚动图片1} />
-                        <img src={AppGlobal.url.首页滚动图片2} />
-                        <img src={AppGlobal.url.首页滚动图片3} />
-                        <img src={AppGlobal.url.首页滚动图片4} />
-                        <img src={AppGlobal.url.首页滚动图片5} />
-                    </Carousel>
-                </Row>
+               
                 <br></br>
             </div>
         );

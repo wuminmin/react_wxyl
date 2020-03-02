@@ -4,7 +4,7 @@ import BraftEditor from 'braft-editor'
 import axios from 'axios'
 import Qs from 'qs'
 import moment from 'moment'
-import { Select, Row, Col ,Button} from 'antd';
+import { Select, Row, Col, Button ,message} from 'antd';
 import AppGlobal from './AppGlobal'
 
 export default class BasicDemo extends React.Component {
@@ -21,6 +21,7 @@ export default class BasicDemo extends React.Component {
     myHTML: '',
     tittle: '',
     type: '',
+    usertoken:'',
   }
 
   componentDidMount() {
@@ -74,6 +75,31 @@ export default class BasicDemo extends React.Component {
             </Select>
             <label>新闻标题:</label>
             <input type="txt" defaultValue="" onChange={this.handleChangeBanShiRiQi2} />
+            <Button
+             type="danger"
+              onClick={e => {
+                let self = this;
+                let data = {
+                  "usertoken": self.state.usertoken,
+                  "lan_mu": self.state.type,
+                  "tittle": self.state.tittle
+                }
+                axios({
+                  headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                  },
+                  method: 'post',
+                  url: 'https://wx.wuminmin.top/wxyl/delete_wz',
+                  data: Qs.stringify(data)
+                }).then(function (response) {
+                  console.log(response);
+                  message.success(response.data);
+                })
+                  .catch(function (error) {
+                    console.log(error);
+                  });
+              }}
+            >删除文章</Button>
             <div className="editor-wrapper">
               <BraftEditor
                 value={editorState}
@@ -118,6 +144,7 @@ export default class BasicDemo extends React.Component {
                   });
               }
               }>上传文章</Button>
+            
           </Col>
         </Row>
 
